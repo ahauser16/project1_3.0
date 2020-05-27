@@ -1,0 +1,92 @@
+.wrapper{
+            
+    padding: 50px;
+    background-color: rgb(34, 34, 34);
+}
+.header_wrapper{
+    background-color: rgb(34, 34, 34);
+    padding: 20px;
+}
+.city{
+    color: rgb(251, 203, 64);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 60px;
+    text-align: center;
+}
+.country{
+    color: rgb(251, 203, 64);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 60px;
+    text-align: center;
+}
+
+
+.Clock{
+    color: rgb(251, 203, 64);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(34, 34, 34);
+    padding-left: 30%;
+    font-size: 100px;
+    text-align: center;
+    
+    
+}
+
+.latitude {                   
+    display:none;
+  }
+
+.longitude {
+    display:none;
+}
+
+.WeatherResult{
+    display:none;
+
+} 
+
+.weatherImage{
+
+
+}
+
+#weatherDisplay{
+
+}
+.color{
+ background-color:  rgb(197, 228, 197);
+}
+
+#userDTEntry{
+    text-align: center;
+   
+}
+#Deezer{
+    text-align: center;
+    background-color: salmon;
+    margin-left: 50%;
+}
+.row{
+    margin-left: 50%;
+    
+}
+#submitButton{
+   
+
+    
+} 
+form{
+    text-align: center;
+    
+}
+#Deezer{
+
+    background-color: salmon;
+    width: 130px;
+    margin-left: 43%; 
+    border-radius: 5px;
+    
+}
+.container{
+    background-color:  rgb(197, 228, 197);
+}

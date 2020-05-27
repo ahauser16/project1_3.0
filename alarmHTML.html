@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm Clock</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-8">
+                <div class="city"> Siberia </div>
+                <div class="country"> Russia </div>
+                <div class="temp"> </div>
+                <div class="tempHigh"> </div>
+                <div class="tempLow"> </div>
+                <div class="wind"> </div>
+                <div class="humidity"> </div>
+                <div class="description"> </div>
+                <img class="icon">  </img>
+            </div>
+
+            <div class="col-4"> 
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <!-- Clock Section -->
+            <div class="container">
+                <div class="row Clock">
+                    <div class="col-md-3">
+                        <div class="Clock_Hour" id="Clock"> </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center" id="weatherDisplay"></div>
+
+                <!-- this is the time display -->
+                <h1></h1>
+                <!-- class="col-sm-1 -->
+
+                <div class="row" style="margin-left: 40%;">
+                    <form id="userDTEntry" class="col-sm-1">
+                        <input type="datetime-local" id="alarmTime" />
+                        <button id="submitButton">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <audio id="xyz" src="TheBeatlesHerecomesthSun.mp4" preload="auto"></audio>
+
+    <audio id="abc" src="TheBeatlesRain.mp4" preload="auto"></audio>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+
+    <script src="alarmlogic.js"></script>
+
+</body>
+
+</html>
