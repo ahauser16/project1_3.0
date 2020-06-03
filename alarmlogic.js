@@ -7,6 +7,10 @@ var h1;
 let lat;
 let long;
 
+//brooklyn coords
+const defaultLat = 40.65;
+const defaultLong = 73.97;
+
 function init() {
 
 	const addForm = document.forms['userDTEntry'];
@@ -32,6 +36,11 @@ function alarmFinished() {
 	h1.textContent = "Alarm Finished!";
 	// let lat = $(".latitude").text();
 	// let long = $(".longitude").text();
+	console.log(lat);
+	
+	//this is the fix
+	// let coords = { lat:lat || defaultLat, long:long || defaultLong };
+
 	let coords = { lat, long };
 	getWeather(coords, displayWeather, true)
 }
@@ -87,6 +96,7 @@ function geoLatLong(callback) {
 		long = position.coords.longitude;
 		$(".latitude").text(lat);
 		$(".longitude").text(long);
+		//placehold
 		if ("function" === typeof callback) callback({ lat, long });
 	});
 }
@@ -115,6 +125,8 @@ function getWeather(coords, callback, boolPlaySong) {
 			}
 			if ("function" === typeof callback) callback(response);
 		})
+		.catch(err => console.log(err));
+		//create function that logs the message or prompt on the screen
 
 }
 
